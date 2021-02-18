@@ -1,2 +1,5 @@
 <h1><%= @cocktail.name %></h1>
+<p><%= link_to "Delete cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+<h2>Add a dose to your drink:</h2>
 <p><%= render 'doses/form' %></p>
