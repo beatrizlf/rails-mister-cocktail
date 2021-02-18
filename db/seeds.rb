@@ -12,6 +12,7 @@ require 'faker'
 if Rails.env.development?
   Ingredient.destroy_all
   Cocktail.destroy_all
+  Dose.destroy_all
 end
 
 puts 'Creating ingredients...'
