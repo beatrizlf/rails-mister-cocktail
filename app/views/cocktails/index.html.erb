@@ -2,18 +2,17 @@
   <div class="container">
     <h1>Welcome to <strong>Space Cocktails</strong></h1>
     <p>Create and find drinks from another galaxy!</p>
-    <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-secondary" %>
+    <p><%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-secondary" %></p>
   </div>
 </div>
-    <h1>Cocktails List</h1>
-    <p></p>
-    <ul>
-      <% @cocktails.each do |cocktail| %>
-        <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-      <% end %>
-    </ul>
-  </div>
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path cocktail.photo.key %>)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+  <% end %>
 </div>
+ 
 <div class="footer">
   <div class="footer-links">
     <a href="https://github.com/beatrizlf"><i class="fab fa-github"></i></a>
