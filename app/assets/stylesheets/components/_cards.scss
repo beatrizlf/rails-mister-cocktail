@@ -1,8 +1,8 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin: 20px 20px;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
 }
 
 .card-category {
@@ -10,7 +10,7 @@
   background-position: center;
   margin-top: 30px;
   height: 300px;
-  width: 200px;
+  width: 300px;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  font-family: "Astrobia";
+  font-family: "Abel", "sans-serif";
 }
 
 // Smallest device
@@ -48,13 +48,13 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
