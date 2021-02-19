@@ -26,14 +26,3 @@ ingredient_list["drinks"].each do |ingredient|
 end
 
 puts 'Ingredients list done!'
-
-
-puts 'Creating good cocktails...'
-
-20.times do 
-  cocktail = Cocktail.create(
-    name: Faker::Space.constellation
-  )
-end
-
-puts 'Cocktails created!'
