@@ -1,6 +1,7 @@
 <%# Navbar %>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "Cocktails", root_path, class: "navbar-brand" %>
+  <%= link_to "Cocktails", root_path, class: "navbar-brand" %><i class="fal fa-planet-ringed" style="color: $white"></i>
+
     
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,7 +11,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Create Cocktail", new_cocktail_path, class: "nav-link" %>
+        <%= link_to "Create Cocktail", new_cocktail_path, class: "btn btn-secondary" %>
       </li>
       </ul>
   </div>
@@ -18,7 +19,7 @@
 
 
 <%# Banner %>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1543719621-92ebcae62483?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1524&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1383&q=80);">
   <div class="container">
     <h1>Welcome to <strong>Space Cocktails</strong></h1>
     <p>Create and find drinks from another galaxy!</p>
@@ -32,5 +33,17 @@
       <%= link_to cocktail.name, cocktail_path(cocktail) %>
     </div>
   <% end %>
+</div>
+
+<%# Footer %>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This website was made by Beatriz Fernandes
+  </div>
 </div>
 

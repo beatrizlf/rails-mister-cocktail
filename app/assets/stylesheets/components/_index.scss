@@ -6,16 +6,16 @@
 @import "cards";
 
 body {
-  background-color: #000105
+  background-color: $black;
 }
 
 a {
-  color: whitesmoke;
+  color: $white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f28900;
+  color: $orange;
 }
 
 h1 {
