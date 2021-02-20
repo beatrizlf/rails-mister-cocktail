@@ -1,5 +1,5 @@
 <%# Navbar %>
-<div class="navbar navbar-expand-sm navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-lewagon fixed-top">
   <%= link_to "Space Cocktails", root_path, class: "navbar-brand" %>
 
     
@@ -22,9 +22,9 @@
 <%# Banner %>
 <div class="banner">
   <div class="container">
-    <h1>Space Cocktails</h1>
-    <p>Drinks from another galaxy!</p>
-    <p><%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
+    <h1>
+      <span id="banner-typed-text"></span>
+    </h1>
   </div>
 </div>
 <%# Cards %>
