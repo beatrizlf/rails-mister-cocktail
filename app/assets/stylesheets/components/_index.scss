@@ -5,21 +5,4 @@
 @import "banner";
 @import "cards";
 
-body {
-  background-color: $black;
-}
 
-a {
-  color: $white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $aqua;
-}
-
-h1 {
-  font-size:large;
-  font-weight: bold;
-  padding: 10px;
-}

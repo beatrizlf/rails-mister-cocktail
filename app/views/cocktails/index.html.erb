@@ -20,29 +20,27 @@
 
 
 <%# Banner %>
-<div class="banner">
-  <div class="container">
-    <h1>
-    <br>
-      <span id="banner-typed-text"></span>
-    </h1>
-  </div>
-</div>
+<h1>
+  <br>
+    <span id="banner-typed-text"></span>
+</h1>
+
 <%# Cards %>
-<div class="cards">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key %>')">
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
-    </div>
-  <% end %>
+<div class="container">
+  <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key %>')">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <%# Footer %>
 <div class="footer">
   <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/beatrizlf"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/fernandesbeatrizdl/"><i class="fab fa-linkedin"></i></a>
   </div>
   <div class="footer-copyright">
     This website was made by Beatriz Fernandes
