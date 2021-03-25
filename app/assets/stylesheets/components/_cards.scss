@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: auto;
+  padding: 20px;
 }
 
 .card-category {
@@ -11,8 +12,8 @@
   background-position: center;
   margin-top: 20px;
   padding: 30px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   display: flex;
   justify-content: center;

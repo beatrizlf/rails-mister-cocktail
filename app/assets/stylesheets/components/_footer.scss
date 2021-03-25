@@ -1,20 +1,30 @@
 .footer {
-  background: $black;
-  height: 100px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  padding: 0px 30px;
+  color: #2E2E2E;
+  margin-top: 30px;
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: #FAFAFA;
   opacity: 0.15;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
   opacity: 1;
 }
+
+.footer-copyright{
+  color: #858585;
+  font-size: 15px;
+}
+
